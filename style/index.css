@@ -46,12 +46,122 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* ------------------------------END RESET-------------------------------------*/
+/* ------------------------------END RESET-------------------------------------
+   ----------------------------------------------------------------------------*/
 
-/* FOR DEBUGGING ONLY */
-h1 {
-    color: purple;
+
+/* FOR DEBUGGING ONLY+++++++++++++++++++++++++++++++++++++++++++++++ */
+/* FOR DEBUGGING ONLY+++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/*.main-pic, .main-text{
     border: 2px solid red;
-}
-/* FOR DEBUGGING ONLY */
+} /*
+/* FOR DEBUGGING ONLY++++++++++++++++++++++++++++++++++++++++++++++++ */
 
+
+
+
+/* GLOBAL SECTION------------------------------------- */
+
+
+body{
+    font-family: 'Cabin', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Styling on header-navigation for current page */
+#current-pg {
+    background: black;
+    border: 2px solid black;
+    color: white;
+}
+
+
+/* HEADER SECTION------------------------------------- */
+/* --------------------------------------------------- */
+
+header {
+    background-image: url("../pics/UI2-header-pic.jpg");
+    background-size: 100%;
+    position: static;
+    box-shadow: 0px 1px 5px #404040;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px gray;
+    
+}
+
+.nav-content{
+    padding: 1em;    
+}
+
+.nav-list {
+    display: flex;
+    margin: 15px 0;
+}
+
+.nav-list a, .main-text a {
+    text-decoration: none;
+    border: 2.5px solid #484848 ;
+    padding: .25em 1em;
+    margin-right: .3em;
+    font-weight: 700;
+    color: black;
+}
+
+.nav-list a:hover, .main-text a:hover {
+    box-shadow: 0px 2px 5px #404040;
+    border: 3px solid black ;
+    color: black;
+}
+
+.nav-list a:active, .main-text a:active {
+    background: black;
+    color: white;
+}
+
+/* CONTECNT SECTION------------------------------------- */
+/* --------------------------------------------------- */
+
+.main-content-area {
+    padding: .75em;
+    display: flex;
+}
+
+.info-section {
+    display: flex;
+}
+
+.main-pic {
+    width: 50%;
+}
+.main-pic img {
+    max-width: 100%;
+    box-shadow: 0px 2px 5px #404040;
+}
+
+.main-text {
+    width: 40%;
+    padding: 3em 3em 1em;
+}
+
+.main-text h2 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: .5em;
+}
+
+.main-text a{
+    /* MAIN STYLING IN HEADER SECTION */
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+.main-text p {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    letter-spacing: 1px;
+}
