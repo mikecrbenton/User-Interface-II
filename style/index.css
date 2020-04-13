@@ -50,29 +50,19 @@ table {
    ----------------------------------------------------------------------------*/
 
 
-/* FOR DEBUGGING ONLY+++++++++++++++++++++++++++++++++++++++++++++++ */
-/* FOR DEBUGGING ONLY+++++++++++++++++++++++++++++++++++++++++++++++ */
-
-/*.main-pic, .main-text{
-    border: 2px solid red;
-} /*
-/* FOR DEBUGGING ONLY++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-
-
 
 /* GLOBAL SECTION------------------------------------- */
-
 
 body{
     font-family: 'Cabin', sans-serif;
     box-sizing: border-box;
+    color: #383838;
 }
 
-/* Styling on header-navigation for current page */
+/* Styling on header-navigation links for current page */
 #current-pg {
-    background: black;
-    border: 2px solid black;
+    background: #404040;
+    border: 2px solid #404040;
     color: white;
 }
 
@@ -81,16 +71,20 @@ body{
 /* --------------------------------------------------- */
 
 header {
-    background-image: url("../pics/UI2-header-pic.jpg");
-    background-size: 100%;
-    position: static;
-    box-shadow: 0px 1px 5px #404040;
+    /*background-image: url("../pics/UI2-header-pic.jpg"); */
+    background-size: 100%; 
+    background-color: #39CCCC;
+    position: fixed;
+    width:100%;
+    box-shadow: 0px 1px 5px #AAAAAA;
+    z-index: 1;
 }
 
 h1 {
     font-size: 3rem;
     font-weight: 700;
-    text-shadow: 2px 2px 4px gray;
+    text-transform: uppercase;
+    margin-bottom: .6em;
     
 }
 
@@ -100,39 +94,45 @@ h1 {
 
 .nav-list {
     display: flex;
-    margin: 15px 0;
+    margin: 1em 0 1em 1.5em;
 }
 
-.nav-list a, .main-text a {
+.nav-list a, 
+.main-text a,
+footer a {
     text-decoration: none;
-    border: 2.5px solid #484848 ;
-    padding: .25em 1em;
-    margin-right: .3em;
+    border: 1px solid #383838 ;
+    padding: .5em 1.5em;
     font-weight: 700;
     color: black;
 }
 
-.nav-list a:hover, .main-text a:hover {
-    box-shadow: 0px 2px 5px #404040;
-    border: 3px solid black ;
+.nav-list a:hover, 
+.main-text a:hover,
+footer a:hover {
+    border: 2.25px solid black ;
     color: black;
 }
 
-.nav-list a:active, .main-text a:active {
+.nav-list a:active, 
+.main-text a:active,
+footer a:hover {
     background: black;
     color: white;
 }
 
-/* CONTECNT SECTION------------------------------------- */
+/* CONTENT SECTION------------------------------------- */
 /* --------------------------------------------------- */
 
 .main-content-area {
-    padding: .75em;
-    display: flex;
+    /* 160px compenstate for fixed header */
+    padding: 160px 1em 1em;
+    background-color: #f5f5f5;
 }
 
 .info-section {
     display: flex;
+    margin-bottom: 1em;
 }
 
 .main-pic {
@@ -149,7 +149,7 @@ h1 {
 }
 
 .main-text h2 {
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: 700;
     margin-bottom: .5em;
 }
@@ -157,6 +157,7 @@ h1 {
 .main-text a{
     /* MAIN STYLING IN HEADER SECTION */
     display: inline-block;
+    border: 2px solid #383838 ;
     margin-bottom: 1em;
 }
 
@@ -164,4 +165,57 @@ h1 {
     font-size: 1rem;
     line-height: 1.2rem;
     letter-spacing: 1px;
+}
+
+/* GALLERY SECTION------------------------------------- */
+/* --------------------------------------------------- */
+
+.gallery-row {
+    display:flex;
+    justify-content:space-between;
+    margin-bottom: 2em;
+}
+
+.image-cell {
+    width:23%;
+}
+
+.image-cell img {
+    width:100%;
+    box-shadow: 0px 2px 5px #404040;
+}
+
+.image-cell img:hover {
+    opacity: .5;
+}
+
+.image-cell p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #404040;
+    margin: .5em 0;
+}
+
+/* FOOTER SECTION------------------------------------- */
+/* --------------------------------------------------- */
+
+footer {
+    background-size: 100%; 
+    background-color: #39CCCC;
+}
+
+.footer-content {
+    text-align: center;
+    padding: 4em 0;
+}
+
+footer p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+footer a {
+    /* MAIN STYLING IN HEADER SECTION */
+    border: 2px solid #003cb3 ;
 }
