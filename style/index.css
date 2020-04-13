@@ -54,7 +54,7 @@ table {
 /* GLOBAL SECTION------------------------------------- */
 
 body{
-    font-family: 'Cabin', sans-serif;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     color: #383838;
 }
@@ -170,14 +170,15 @@ footer a:hover {
 /* GALLERY SECTION------------------------------------- */
 /* --------------------------------------------------- */
 
-.gallery-row {
+.gallery-rows {
     display:flex;
     justify-content:space-between;
-    margin-bottom: 2em;
+    flex-wrap: wrap;
 }
 
 .image-cell {
     width:23%;
+    margin-bottom: 2em;
 }
 
 .image-cell img {
@@ -212,7 +213,7 @@ footer {
 
 footer p {
     font-size: 1.2em;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 }
 
 footer a {
